@@ -161,7 +161,7 @@ namespace CHELB
                                             }
                                             else
                                             {
-                                                // NOP(通過しないケース)
+                                                // NOP(Processing unnecessary for LF)
                                             }
 
                                             sb.Append($", {parameters.LineBreak}");
