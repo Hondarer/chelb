@@ -166,7 +166,7 @@ namespace CHELB
 
                             if (emptyPath == true)
                             {
-                                files.Add(filePath.Substring(basePath.Length + 1));
+                                files.Add(Path.GetFileName(filePath));
                             }
                             else
                             {
