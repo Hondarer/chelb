@@ -48,13 +48,14 @@ namespace CHELB
                 $"{copyright.PadLeft(width, ' ')}\r\n\r\n" +
                 $"{title} [/IE:AUTO | /IE:encodingname] [/OE:encodingname]\r\n" +
                 $"{new string(' ', title.Length)} [/OB:TAKEOVER | /OB:NO | /OB:YES]\r\n" + "" +
-                $"{new string(' ', title.Length)} [/LB:NOCARE | /LB:LF | /LB:CR | /LB:CRLF] [/F] [/FC] [/T]\r\n" +
+                $"{new string(' ', title.Length)} [/LB:NOCARE | /LB:LF | /LB:CR | /LB:CRLF] [/NB] [/F] [/FC] [/T]\r\n" +
                 $"{new string(' ', title.Length)} path [...]\r\n\r\n" +
                 "  path  Specify the file (s) to be converted.\r\n" +
                 "  /IE   Specify the encoding of the original file.\r\n" +
                 "  /OE   Specify the encoding you want to convert.\r\n" +
                 "  /OB   Specify the granting the BOM.\r\n" +
                 "  /LB   Specify conversion of line break code.\r\n" +
+                "  /NB   Do not create a backup.\r\n" +
                 "  /F    If a backup file exists, overwrite it and continue the conversion.\r\n" +
                 "  /FC   Bypass the check and allow irreversible conversions.\r\n" +
                 "  /T    Change the file update date and time.\r\n\r\n" +

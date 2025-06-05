@@ -13,6 +13,8 @@ namespace CHELB
 
             public System.Text.Encoding OutputEncoding { get; set; } = null;
 
+            public bool NoBackup { get; set; } = false;
+
             public bool OverwriteBackupfile { get; set; } = false;
 
             public bool TouchLastWriteTime { get; set; } = false;
@@ -93,6 +95,12 @@ namespace CHELB
                         Console.Error.WriteLine("/OB parameter is invalid.");
                         throw new ArgumentException("/OB");
                     }
+                }
+                else if (arg.Equals("/NB", StringComparison.CurrentCultureIgnoreCase) == true)
+                {
+                    // No Backup
+
+                    parameters.NoBackup = true;
                 }
                 else if (arg.Equals("/F", StringComparison.CurrentCultureIgnoreCase) == true)
                 {
